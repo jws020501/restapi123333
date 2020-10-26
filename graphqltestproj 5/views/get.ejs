@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>api모음</title>
+    <link rel="stylesheet" href="css.css">
+</head> 
+<body>
+    <header>
+        <div>
+            <h1>api 불러오기</h1>
+            <a href="/post">api 추가하기</a>
+            <a href="/delete">api 삭제하기</a>
+        </div>
+    </header>
+    <div>
+        <form method="POST" action="/get">
+            <input id="apilink" name="apilink" value="" type="url" placeholder="api주소">
+            <input id="apikey" name="apikey" value="" type="text" placeholder="apikey">
+            <input type="submit" value="쿼리전송">
+        </form>
+        <div>
+            <p><%=message%></p>
+        </div>
+    </div>
+</body>
+</html>
